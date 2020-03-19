@@ -24,7 +24,27 @@ h1 {
 h2 {
   margin: 1.75em 0 0 0;
   color: #adffda; 
-  font-weight: normal;}
+  font-weight: normal;
+  }
+
+  table {
+    background: #1e1b1e url("../images/applebw.png") no-repeat; 
+    background: #1e1b1e url("../images/meatbw.png") no-repeat; 
+    background: #1e1b1e url("../images/fishbw.png") no-repeat;  
+
+  }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  font-style:normal;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+}
 
 h2 + p {
   margin: 0.25em 0 0 0;}
@@ -50,7 +70,7 @@ p + h2 {
   background-color: #534d33;
   color: #fff;
   width: 100px;
-  padding: 0 15px;
+  padding: 0 10px;
   text-align: center;
   min-height: 50%;
   position: absolute;
