@@ -7,7 +7,26 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Open Sans', sans-serif;}
+  font-family: 'Open Sans', sans-serif;
+  }
+
+  #Heads1{
+    font-size: 20px;
+    -webkit-text-fill-color:whitesmoke;
+    text-decoration-color: white;
+    text-shadow:wheat;
+}
+
+button {
+  background-color: #3937a3;
+  color: #fff;
+  width: 100px;
+  padding: 0 10px;
+  text-align: center;
+  min-height: 10%;
+  position:absolute;
+  top: 330px;
+  right: 46%;}
 
 h1 {
   background: #1e1b1e url("../images/travelworthy-logo.gif") no-repeat;
@@ -27,23 +46,68 @@ h2 {
   font-weight: normal;
   }
 
-  table {
-    background: #1e1b1e url("../images/applebw.png") no-repeat; 
-    background: #1e1b1e url("../images/meatbw.png") no-repeat; 
-    background: #1e1b1e url("../images/fishbw.png") no-repeat;  
+ table, th, td {
+    font-weight:initial;
+    -webkit-text-fill-color:whitesmoke;
+    text-decoration-color: white;
+    border-color:bisque;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    font-style:normal;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 30px;
+    height: 30px;
+    margin: 150px auto;   
+}
 
-  }
+#Meat{
+    background-color:sienna;
+}
 
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 5px;
-  text-align: center;
-  font-style:normal;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: white;
-  width: 30px;
-  height: 30px;
+
+#Fish{
+    background-color:teal;
+}
+
+
+#Veggie{
+    background-color:seagreen;
+}
+
+#content {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    padding-top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+
+    max-height: 270px;
+    overflow: hidden;
+}
+
+#content.open {
+    max-height: 1000px;
+
+    -webkit-transition: max-height 0.7s;
+    -moz-stack-sizing: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#show-more {
+    background: yellowgreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    width: 140px;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
 }
 
 h2 + p {
@@ -135,11 +199,13 @@ p + h2 {
 /* footer */
 
 #footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #adffda;}
+position:absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #adffda;
+margin: -30px auto;
+}
 
 #footer p {
   padding: 10px;
